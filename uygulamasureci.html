@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>KA210 LUMOS PROJESİNDE UYGULAMA SÜRECİ BAŞLADI</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#0b2a66;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px;
+background:white;
+}
+
+p{
+font-size:18px;
+line-height:1.6;
+margin-bottom:20px;
+}
+
+/* GALERİ */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.gallery img{
+width:250px;
+cursor:pointer;
+border-radius:8px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* BÜYÜYEN FOTOĞRAF */
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
+}
+
+.modal img{
+max-width:80%;
+max-height:80%;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>KA210 LUMOS PROJESİNDE UYGULAMA SÜRECİ BAŞLADI</h1>
+</header>
+
+<div class="container">
+
+<p>
+KA210 LUMOS Projesinde Uygulama Süreci Başladı
+</p>
+
+<p>
+Merkezimizin ortağı olduğu KA210 LUMOS Projesi kapsamında yürütülen STEM tabanlı, yapay zekâ destekli ders içeriği geliştirme sürecinde önemli bir aşama tamamlandı.
+</p>
+
+<p>
+Proje çerçevesinde gerçekleştirilen “eğitici eğitimleri” başarıyla tamamlanmış; ortak ülkelerin uzmanları tarafından hazırlanan ders planları kurumumuzda uygulanmaya başlanmıştır.
+</p>
+
+<p>
+Bu yenilikçi öğretim sürecinde:
+
+• STEM yaklaşımı temel alınmakta,
+
+• Yapay zekâ destekli içerik tasarımı kullanılmakta,
+
+• Disiplinler arası öğrenme ön planda tutulmaktadır.
+</p>
+
+<p>
+İkinci aşamada ise uygulanan ders planlarının öğrenci başarısına etkisi bilimsel yöntemlerle araştırılacaktır. Elde edilecek veriler, projenin sürdürülebilirliği ve yaygınlaştırılması açısından yol gösterici olacaktır.
+</p>
+
+<p>
+Eğitimde yenilikçi uygulamaları merkeze alan çalışmalarımız kararlılıkla devam etmektedir.
+</p>
+
+<h2>Fotoğraflar</h2>
+
+<div class="gallery">
+
+<img src="surec1.jpg" onclick="buyut(this)">
+<img src="surec2.jpg" onclick="buyut(this)">
+<img src="surec3.jpg" onclick="buyut(this)">
+<img src="surec4.jpg" onclick="buyut(this)">
+
+</div>
+
+</div>
+
+<div class="modal" id="modal" onclick="kapat()">
+<img id="buyukFoto">
+</div>
+
+<script>
+
+function buyut(img){
+
+document.getElementById("modal").style.display="flex"
+document.getElementById("buyukFoto").src=img.src
+
+}
+
+function kapat(){
+
+document.getElementById("modal").style.display="none"
+
+}
+
+</script>
+
+</body>
+</html>
