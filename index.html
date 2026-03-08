@@ -3,95 +3,268 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Benim Web Sitem</title>
+
+<title>SPARK Erasmus+ KA210 Projesi</title>
+
 <style>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: linear-gradient(135deg, #667eea, #764ba2);
-color: white;
-text-align: center;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
-header {
-padding: 60px 20px;
+
+body{
+background:#f5f7fb;
+color:#333;
 }
-h1 {
-font-size: 48px;
-margin-bottom: 10px;
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#667eea,#764ba2);
+color:white;
+padding:40px;
+text-align:center;
 }
-p {
-font-size: 20px;
-opacity: 0.9;
+
+/* NAV */
+
+nav ul{
+list-style:none;
+display:flex;
+justify-content:center;
+margin-top:20px;
 }
-.btn {
-display: inline-block;
-margin-top: 30px;
-padding: 15px 30px;
-background: white;
-color: #764ba2;
-text-decoration: none;
-border-radius: 30px;
-font-weight: bold;
-transition: 0.3s;
+
+nav ul li{
+margin:0 20px;
 }
-.btn:hover {
-background: #f1f1f1;
-transform: scale(1.05);
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+font-size:18px;
+transition:0.3s;
 }
-section {
-background: white;
-color: #333;
-padding: 60px 20px;
+
+nav ul li a:hover{
+color:#ffd166;
 }
-footer {
-padding: 20px;
-font-size: 14px;
-opacity: 0.8;
+
+/* HERO */
+
+.hero{
+padding:80px 20px;
 }
+
+.hero h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+opacity:0.9;
+}
+
+/* SECTION */
+
+section{
+padding:70px 20px;
+text-align:center;
+}
+
+/* HAKKIMDA */
+
+#hakkimda{
+background:white;
+}
+
+/* ETKİNLİKLER */
+
+#etkinliklerimiz{
+background:#eef1ff;
+}
+
+.etkinlik{
+max-width:900px;
+margin:auto;
+}
+
+.etkinlik img{
+width:100%;
+border-radius:12px;
+margin-top:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* İLETİŞİM */
+
+#iletisim{
+background:white;
+}
+
+/* FOOTER */
+
+footer{
+background:#333;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* BUTON */
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:white;
+color:#764ba2;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+background:#f1f1f1;
+}
+
 </style>
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffdd57;
-}
 </head>
+
 <body>
 
 <header>
-    <h1>Hoş Geldiniz 🚀</h1>
-    <nav>
-        <ul>
-            <li><a href="#anasayfa">Ana Sayfa</a></li>
-            <li><a href="#hakkimda">Hakkımda</a></li>
-            <li><a href="#iletisim">İletişim</a></li>
-        </ul>
-    </nav>
+
+<div class="hero">
+
+<h1>SPARK Erasmus+ KA210 Projesi</h1>
+
+<p>SPARK Erasmus+ KA210 Projesi Etkinlikleri</p>
+
+<a href="#hakkimda" class="btn">Siteyi Keşfet</a>
+
+</div>
+
+<nav>
+<ul>
+
+<li><a href="#anasayfa">Ana Sayfa</a></li>
+
+<li><a href="#hakkimda">Hakkımda</a></li>
+
+<li><a href="#etkinliklerimiz">Etkinliklerimiz</a></li>
+
+<li><a href="#iletisim">İletişim</a></li>
+
+</ul>
+</nav>
+
 </header>
 
-<section id="hakkimda">
-<h2>Hakkımda</h2>
-<p>web sitemize hoş geldiniz.</p>
+
+<section id="anasayfa">
+
+<h2>Ana Sayfa</h2>
+
+<p>SPARK Erasmus+ KA210 Projesini ve projenin etkinliklerini bu siteden takip edebilirsiniz.</p>
+
 </section>
 
+
+<section id="hakkimda">
+
+<h2>Hakkımızda</h2>
+
+<p>
+
+Keçiören Bilim ve Sanat Merkezi öğrencilerin bilimsel, sanatsal ve teknolojik gelişimlerini desteklemek amacıyla çeşitli projeler yürütmektedir.
+
+</p>
+
+</section>
+
+
+<section id="etkinliklerimiz">
+
+<h2>Etkinliklerimiz</h2>
+
+<div class="etkinlik">
+
+<h3>SPARK Erasmus+ Projesi</h3>
+
+<p>
+
+Makedonya ve Romanya ortaklığıyla yürütülen SPARK Erasmus+ KA210 Projesi kapsamında proje logosunun belirlenmesine yönelik oylama süreci tamamlanmıştır.
+
+ 
+
+Projenin Türkiye ayağında görev alan öğretmenlerimiz Mine Türker, Buket Şen Demirel, Seda Sünker, Fatma Betül Öztürk, Mervenur Şensoy, Ali Demir ve Ayhan Çetin koordinasyonunda gerçekleştirilen oylama sürecine proje ortakları aktif katılım sağlamıştır.
+
+ 
+
+Yapılan değerlendirme sonucunda 65 oy alarak birinci olan tasarım, Romanya ortak okulumuz ȘCOALA GIMNAZIALĂ NR. 1 VALCĂU DE JOS ekibine ait olmuştur.
+
+ 
+
+SPARK projesinin vizyonunu ve çok uluslu iş birliği ruhunu yansıtan logo, bundan sonraki tüm proje faaliyetlerinde resmi görsel kimlik olarak kullanılacaktır.
+
+ 
+
+Emeği geçen tüm öğretmenlerimize ve sürece katkı sağlayan Makedonya ve Romanya ortaklarımıza teşekkür eder, kazanan Romanya ekibini tebrik ederiz.
+
+
+
+</p>
+
+<!-- FOTOĞRAF BURAYA EKLENİR -->
+
+<img src="spark.jpg" alt="SPARK Projesi">
+
+</div>
+
+</section>
+
+
+<section id="iletisim">
+
+<h2>İletişim</h2>
+
+<p>
+
+WEB: https://keciorenbilsem.meb.k12.tr
+
+</p>
+
+<p>
+
+Telefon: 0312 514 81 45
+
+</p>
+
+<p>
+
+Adres:
+
+Gümüşdere Mahallesi 
+Yavuz Sultan Selim Bulvarı 
+No:7/3 Keçiören / Ankara
+
+</p>
+
+</section>
+
+
 <footer>
-© 2026 Tüm Hakları Saklıdır
+
+<p>© 2026 Keçiören BİLSEM</p>
+
 </footer>
 
 </body>
